@@ -22,13 +22,6 @@ sys.path.insert(0, commons['script_location'])
 define("port", default=9000, help="port", type=int)
 define("debug", default=False, help="run in debug mode", type=bool)
 
-class BaseHandler(tornado.web.RequestHandler):
-    # Page render
-    def render(self, template_name, **kwargs):
-        tornado.web.RequestHandler.render(self,
-                                          template_name,
-                                          **kwargs)
-
 class RunApp(object):
     def __init__(self, commons):
         self.commons = commons
