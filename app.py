@@ -62,6 +62,11 @@ class Application(tornado.web.Application):
              {"path" : os.path.join(self.commons['script_location'],
                                     'app',
                                     'index.html')}),
+            (r"/partials/(.*)", tornado.web.StaticFileHandler,
+             {"path" : os.path.join(self.commons['script_location'],
+                                    'app',
+                                    'partials')}),
+
         ]
 
         settings = dict(

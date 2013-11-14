@@ -9,7 +9,7 @@ tornadoSkel.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
         when('/', {
-            templateUrl: 'partials/intro.html',
+            templateUrl: 'static/partials/intro.html',
             controller: 'IndexCtrl'
         }).
         otherwise({

@@ -4,6 +4,13 @@ tornado-angularjs-skel
 python 3, tornado, angularjs boilerplate code for starting a tornado
 http server and developing with angularjs.
 
+### a note
+
+this is for development only, since this is primarily static file
+serving it's better to serve your application from nginx or apache. if
+you are wanting a quick setup without much fuss then this skeleton
+will do.
+
 ## requirements
 
 + python 3.3.x
